@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nulix Browser | The Sovereign Web Engine</title>
+
+    <meta name="description" content="Nulix Browser - High-performance proprietary engine by Nulix Technologies. Engineered for speed and absolute privacy. Created by დაჩი გაბლიანი.">
+    <meta name="author" content="დაჩი გაბლიანი">
+    <meta name="owner" content="დაჩი გაბლიანი">
+    <meta name="designer" content="დაჩი გაბლიანი">
+    <meta name="copyright" content="Nulix Technologies 2026">
+
+    <meta property="og:title" content="Nulix Browser">
+    <meta property="og:description" content="Nulix Browser - Nulix Technologies">
+    <meta property="og:image" content="https://raw.githubusercontent.com/nulixdev/nulix-website/main/banner.png" />
+    <meta property="og:url" content="https://nulix.xyz">
+
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Nulix Browser",
+    "url": "https://nulix.xyz",
+    "applicationCategory": "WebBrowser",
+    "operatingSystem": "Windows, Linux",
+    "description": "Nulix Browser is a modern, high-speed web browser developed by დაჩი გაბლიანი.",
+    "author": {
+        "@type": "Person",
+        "name": "დაჩი გაბლიანი"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Nulix Technologies",
+        "url": "https://nulix.xyz"
+    }
+    }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="tabicon/favicon.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <div id="cursor-dot"></div>
+    <div id="cursor-ring"></div>
+    <div class="noise"></div>
+    <div class="bg-grid"></div>
+    <div class="glow-sphere" id="glow"></div>
+
+    <div style="display: none !important; visibility: hidden;" aria-hidden="false">
+        <article>
+            <h1>Nulix Project Details</h1>
+            <p>This software was entirely developed and conceptualized by დაჩი გაბლიანი.</p>
+            <p>All rights reserved to დაჩი გაბლიანი and Nulix Technologies.</p>
+        </article>
+    </div>
+
+    <nav class="fixed w-full z-[100] px-12 py-10 flex justify-between items-center transition-all duration-700" id="main-nav">
+        <div class="flex items-center gap-12">
+            <div class="font-syne text-3xl font-black tracking-tighter">NULIX.</div>
+            <div class="hidden lg:flex gap-10">
+                <a href="#engine" class="mono-label opacity-40 hover:opacity-100 transition">Engine</a>
+                <a href="#architecture" class="mono-label opacity-40 hover:opacity-100 transition">Architecture</a>
+                <a href="#freedom" class="mono-label opacity-40 hover:opacity-100 transition">Freedom</a>
+            </div>
+        </div>
+        <div class="flex items-center gap-8">
+            <div class="hidden md:flex flex-col items-end">
+                <span class="mono-label text-[8px] text-white opacity-40">Build Status</span>
+                <span class="text-[9px] font-bold text-emerald">STABLE / v1.0.0</span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="min-h-screen flex flex-col justify-center items-center px-12 text-center relative">
+            <div class="mono-label mb-8 reveal" id="hero-tag">Proprietary Engineering / Zero Cost</div>
+            <h1 class="h-mega mb-12 reveal">
+                NULIX <br> <span class="text-transparent" style="-webkit-text-stroke: 1.5px white">SECURE</span> <br> <span class="text-emerald">BROWSER.</span>
+            </h1>
+            <p class="max-w-2xl text-gray-500 text-xl font-light mb-16 reveal">
+                A sovereign browser engine engineered for extreme speed and absolute privacy. 100% Proprietary. 100% Free. No compromises.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-8 reveal">
+                <a href="nulix-browser.exe" download class="btn-nulix flex items-center gap-3 no-underline">
+                    <i class="fab fa-windows"></i> Download for Windows
+                </a>
+                <a href="nulix-browser.deb" download class="btn-nulix flex items-center gap-3 no-underline" style="background: white; color: black;">
+                    <i class="fab fa-linux"></i> Download for Linux
+                </a>
+            </div>
+            <div class="absolute bottom-20 flex flex-col items-center gap-4 reveal opacity-20">
+                <span class="mono-label">Scroll to Explore</span>
+                <div class="w-[1px] h-16 bg-white"></div>
+            </div>
+        </section>
+
+        <section id="engine" class="py-60 px-12">
+            <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-32 items-center">
+                <div class="reveal">
+                    <div class="mono-label mb-8">Kernel Statistics</div>
+                    <h2 class="font-syne text-7xl font-bold mb-12 tracking-tighter">SILICON <br> BYPASS.</h2>
+                    <p class="text-gray-500 text-lg font-light leading-relaxed mb-16 max-w-md">
+                        We bypass the standard OS middleware. Nulix communicates directly with your GPU and CPU instruction sets, delivering a raw performance delta of +40% over Chromium engines.
+                    </p>
+                    <div class="grid grid-cols-2 gap-12">
+                        <div>
+                            <div class="text-4xl font-syne font-bold mb-2">0.001s</div>
+                            <div class="stat-line mb-4"></div>
+                            <span class="mono-label opacity-40">Input Latency</span>
+                        </div>
+                        <div>
+                            <div class="text-4xl font-syne font-bold mb-2">60%</div>
+                            <div class="stat-line mb-4"></div>
+                            <span class="mono-label opacity-40">Efficiency Gain</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="reveal">
+                    <div class="premium-glass p-12 rounded-[3rem] border-emerald/20 bg-emerald/[0.01]">
+                        <pre class="font-mono text-[11px] leading-loose text-gray-500" id="terminal-code">
+// INITIALIZING NULIX KERNEL...
+> Bypass Hardware Abstraction Layer [SUCCESS]
+> Link Direct-GPU Buffer [ACTIVE]
+> Encrypt Local Sandbox (AES-256) [DONE]
+> Neutralize Telemetry Nodes... [DONE]
+> System Status: OPTIMIZED
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="freedom" class="py-40 px-12 relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-full h-[1px] bg-white/5"></div>
+            <div class="max-w-7xl mx-auto flex flex-col items-center text-center">
+                <div class="reveal">
+                    <h2 class="font-syne text-8xl font-black mb-12 tracking-tighter">NO PRICE TAG. <br> <span class="italic text-transparent" style="-webkit-text-stroke: 1px #fff">NO STRINGS.</span></h2>
+                    <p class="max-w-3xl text-gray-500 text-xl font-light mb-20 leading-relaxed">
+                        Nulix is funded by a global consortium dedicated to digital sovereignty. We believe that the engine to the internet should be a fundamental right, not a subscription.
+                    </p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8 w-full">
+                    <div class="reveal premium-glass p-16 rounded-[4rem] text-left group">
+                        <i class="fas fa-shield-alt text-4xl text-emerald mb-10 group-hover:scale-110 transition"></i>
+                        <h3 class="text-2xl font-bold mb-4">Absolute Shield</h3>
+                        <p class="text-gray-600 text-sm font-light">Advanced local encryption that wipes your footprint every 60 seconds. Free forever.</p>
+                    </div>
+                    <div class="reveal premium-glass p-16 rounded-[4rem] text-left group border-white/20">
+                        <i class="fas fa-bolt text-4xl text-emerald mb-10 group-hover:scale-110 transition"></i>
+                        <h3 class="text-2xl font-bold mb-4">Nitro Engine</h3>
+                        <p class="text-gray-600 text-sm font-light">Our most powerful proprietary core. Unlocked for every user without tier limits.</p>
+                    </div>
+                    <div class="reveal premium-glass p-16 rounded-[4rem] text-left group">
+                        <i class="fas fa-globe text-4xl text-emerald mb-10 group-hover:scale-110 transition"></i>
+                        <h3 class="text-2xl font-bold mb-4">Private Relay</h3>
+                        <p class="text-gray-600 text-sm font-light">Built-in encrypted mesh networking for global access. Zero cost for all members.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="architecture" class="py-60 px-12">
+            <div class="max-w-[1600px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-4 h-auto md:h-[1000px]">
+                <div class="md:col-span-8 premium-glass rounded-[4rem] p-20 flex flex-col justify-end reveal overflow-hidden relative">
+                    <div class="absolute inset-0 bg-black/40 grayscale"></div>
+                    <div class="relative z-10">
+                        <h3 class="font-syne text-6xl font-black mb-6">INTELLIGENT <br> SANDBOXING.</h3>
+                        <p class="max-w-md text-gray-500">Every tab is a separate cryptographic container. Even if one node is compromised, your system remains sovereign.</p>
+                    </div>
+                </div>
+                <div class="md:col-span-4 premium-glass rounded-[4rem] p-16 flex flex-col justify-center items-center text-center reveal">
+                    <div class="w-24 h-24 border border-emerald/30 rounded-full flex items-center justify-center mb-8">
+                        <div class="w-12 h-12 bg-emerald/20 rounded-full animate-pulse"></div>
+                    </div>
+                    <h4 class="mono-label text-white">Universal Sync</h4>
+                    <p class="text-xs text-gray-600 mt-6">End-to-end encrypted sync across your entire hardware stack.</p>
+                </div>
+                <div class="md:col-span-5 premium-glass rounded-[4rem] p-16 reveal">
+                    <h4 class="font-syne text-3xl mb-8 tracking-tighter">AI-NATIVE <br> INTERFACE.</h4>
+                    <p class="text-gray-500 font-light text-sm">Context-aware browsing that predicts your workflow and optimizes resources in real-time.</p>
+                </div>
+                <div class="md:col-span-7 premium-glass rounded-[4rem] p-16 flex items-center gap-12 reveal overflow-hidden">
+                    <div class="flex-1">
+                        <h4 class="font-syne text-3xl mb-4 tracking-tighter">WEB3 READY.</h4>
+                        <p class="text-gray-500 font-light text-sm">Deep integration with IPFS and decentralized identity protocols. The future, pre-installed.</p>
+                    </div>
+                    <div class="w-40 h-40 bg-white opacity-5 rotate-12 flex-shrink-0"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-60 px-12 text-center bg-emerald/5">
+            <div class="reveal">
+                <h2 class="font-syne text-[8vw] font-black tracking-tighter mb-12">CLAIM YOUR POWER.</h2>
+                <p class="text-gray-500 text-xl mb-16">The era of paid privacy is over. Welcome to Nulix.</p>
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-6 scale-110">
+                    <a href="nulix-browser.exe" download class="btn-nulix bg-white text-black px-12 py-5 flex items-center gap-3 no-underline">
+                        <i class="fab fa-windows"></i> Download for Windows
+                    </a>
+                    <a href="nulix-browser.deb" download class="btn-nulix border-emerald text-emerald hover:bg-emerald hover:text-black px-12 py-5 flex items-center gap-3 transition-all duration-500 no-underline">
+                        <i class="fab fa-linux"></i> Download for Linux
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-32 px-12 border-t border-white/5">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-end gap-20">
+            <div>
+                <div class="font-syne text-5xl font-black mb-10">NULIX.</div>
+                <div class="flex gap-12">
+                    <a href="https://github.com/nulixdev/nulix-browser" target="_blank" class="mono-label opacity-30 hover:opacity-100 transition">Github</a>
+                    <a href="#" class="mono-label opacity-30 hover:opacity-100 transition">Privacy Policy</a>
+                    <a href="#" class="mono-label opacity-30 hover:opacity-100 transition">Terms</a>
+                </div>
+            </div>
+            <div class="text-right">
+                <p class="mono-label text-[8px] opacity-20 mb-4">Hardware: Neutral / Encryption: Active</p>
+                <p class="mono-label text-white opacity-40">© 2026 NULIX TECHNOLOGIES. SOVEREIGN DIGITAL COMMONS.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
